@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   aff_last_param.c                                   :+:      :+:    :+:   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mahrakot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 16:28:22 by mahrakot          #+#    #+#             */
-/*   Updated: 2024/02/17 16:48:15 by mahrakot         ###   ########.fr       */
+/*   Created: 2024/01/15 16:46:53 by mahrakot          #+#    #+#             */
+/*   Updated: 2024/01/15 17:06:32 by mahrakot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-int main(int ac, char **av)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-    if (ac > 1)
-    {
-        while (*av[ac -1])
-        {
-            write(1, av[ac -1], 1);
-            av[ac - 1]++;
-        }
-    }
-    write(1, "\n", 1);
-    return (0);
+	if (b == 0)
+		return ;
+	*div = a / b;
+	*mod = a % b;
 }

@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   aff_last_param.c                                   :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mahrakot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/17 16:28:22 by mahrakot          #+#    #+#             */
-/*   Updated: 2024/02/17 16:48:15 by mahrakot         ###   ########.fr       */
+/*   Created: 2024/01/15 08:45:48 by mahrakot          #+#    #+#             */
+/*   Updated: 2024/01/15 15:53:40 by mahrakot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+/*#include <stdio.h>*/
 
-int main(int ac, char **av)
+void	ft_ft(int *nbr)
 {
-    if (ac > 1)
-    {
-        while (*av[ac -1])
-        {
-            write(1, av[ac -1], 1);
-            av[ac - 1]++;
-        }
-    }
-    write(1, "\n", 1);
-    return (0);
+	*nbr = 42;
 }
+
+/*int	main(void)
+{
+	int	i;
+
+	i = 30;
+	printf("%d\n", i);
+	ft_ft(&i);
+	printf("%d", i);
+	return (0);
+}*/
